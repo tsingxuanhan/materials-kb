@@ -1,126 +1,145 @@
-# 📚 材料科学ML知识库 | Materials Science ML Knowledge Base
+# 📚 Materials Science ML Knowledge Base
 
-> 237篇论文 · 11个分类 · ~9000行结构化知识 · 面向ML零基础的材料科学同学
+> 237 papers · 11 categories · ~9,000 lines of structured knowledge · Built for materials science students starting ML from zero
 
 [![Papers](https://img.shields.io/badge/Papers-237-blue)]()
 [![Categories](https://img.shields.io/badge/Categories-11-green)]()
-[![License](https://img.shields.io/badge/License-MIT-yellow)]()
+[![Accuracy](https://img.shields.io/badge/Accuracy-99%25-brightgreen)]()
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
-## ✨ 为什么做这个
+---
 
-材料科学ML中文知识极度稀缺。如果你是材料专业的本科生，想学ML用于材料研究，你会遇到两个问题：
+## ✨ Why This Exists
 
-1. **论文读不懂** — 英文ML论文术语密集，材料背景的同学很难跨越术语鸿沟
-2. **代码跑不通** — 论文有代码但环境配置、数据格式、超参数全是坑
+Chinese-language materials science ML knowledge is extremely scarce. If you're a materials science undergrad wanting to learn ML for materials research, you'll hit two walls:
 
-这个知识库试图解决"材料人学ML"的信息差——用中文系统化地整理材料+ML交叉领域的核心知识，为后来者搭一座桥。
+1. **Papers are unreadable** — English ML papers are dense with jargon. Materials students struggle to cross the terminology gap.
+2. **Code doesn't run** — Papers come with code, but environment setup, data formats, and hyperparameters are minefields.
 
-## 📊 覆盖范围
+This knowledge base tries to bridge the "materials person learns ML" information gap — systematically organizing core materials + ML crossover knowledge in Chinese, building a bridge for those who come after.
 
-| KB | 文件数 | 规模 | 内容 |
-|----|--------|------|------|
-| KB0 全量索引 | 1 | 2855行 | ~200篇论文全量索引，11分类 |
-| KB1 材料ML核心 | 8 | ~2448行 | 数据库→描述符→性质预测→高通量→GNN |
-| KB2 理论与基础 | 3 | ~887行 | ML基础 / DL优化 / 贝叶斯方法 |
-| KB3 模型与工具 | 4 | ~1477行 | CNN视觉 / RNN序列 / RL / 工具框架 |
-| KB4 语言与生成 | 2 | ~775行 | 生成模型 / NLP与LLM |
-| KB5 娱乐库 | 1 | ~349行 | 绝区零/Steam/番剧/音乐 |
+---
 
-**准确率：~99%**（7处错误已修复，3处存疑）
+## 📊 Coverage
 
-## 🎯 面向谁
+| KB | Files | Size | Content |
+|----|-------|------|---------|
+| KB0 Global Index | 1 | 2,855 lines | ~200 papers, full index, 11 categories |
+| KB1 Materials ML Core | 8 | ~2,448 lines | Databases → descriptors → property prediction → high-throughput → GNNs |
+| KB2 Theory & Foundations | 3 | ~887 lines | ML fundamentals / DL optimization / Bayesian methods |
+| KB3 Models & Tools | 4 | ~1,477 lines | CNN vision / RNN sequences / RL / tooling & frameworks |
+| KB4 Language & Generation | 2 | ~775 lines | Generative models / NLP & LLMs |
+| KB5 Entertainment | 1 | ~349 lines | Zenless Zone Zero / Steam / anime / music |
 
-- 材料科学本科生/研究生，ML零基础起步
-- 想要快速了解"材料×AI"能做什么的同学
-- 需要论文导航（先读哪3篇，而不是读200篇）的研究者
+**Accuracy: ~99%** (7 errors fixed, 3 unconfirmed)
 
-## 🗂️ 知识库结构
+---
+
+## 🎯 Who It's For
+
+- Materials science undergrads / grad students starting ML from zero
+- Anyone wanting to quickly grasp "what can materials × AI do"
+- Researchers who need a paper roadmap (which 3 to read first, not 200)
+
+---
+
+## 🗂️ Structure
 
 ```
 materials-kb/
-├── KB0_全量论文索引/       # 全局索引，快速查找
-│   └── KB0_全量论文索引.md   (2855行, 200+论文)
-├── KB1_材料ML核心/          # 材料科学ML方法论
-│   ├── 01_材料数据库.md       (Materials Project/AFLOW/OQMD)
-│   ├── 02_材料表示与描述符.md  (组成/结构/电子描述符)
-│   ├── 03_性质预测.md         (带隙/模量/稳定性预测)
+├── KB0_全量论文索引/          # Global index — quick lookup
+│   └── KB0_全量论文索引.md      (2,855 lines, 200+ papers)
+├── KB1_材料ML核心/             # Materials science ML methodology
+│   ├── 01_材料数据库.md          (Materials Project / AFLOW / OQMD)
+│   ├── 02_材料表示与描述符.md     (Composition / structure / electronic descriptors)
+│   ├── 03_性质预测.md            (Band gap / modulus / stability prediction)
 │   ├── 04_高通量筛选与逆向设计.md
-│   ├── 05_特定材料系统.md      (钙钛矿/电池/催化)
+│   ├── 05_特定材料系统.md         (Perovskites / batteries / catalysis)
 │   ├── 06_综述论文.md
 │   ├── 07_新兴方向.md
-│   └── 08_图神经网络.md       (CGCNN/ALIGNN/MEGNet)
-├── KB2_理论与基础/          # ML理论基础
+│   └── 08_图神经网络.md          (CGCNN / ALIGNN / MEGNet)
+├── KB2_理论与基础/             # ML theoretical foundations
 │   ├── 01_ML基础.md
 │   ├── 02_DL优化.md
 │   └── 03_贝叶斯方法.md
-├── KB3_模型与工具/          # 具体模型架构与工具
+├── KB3_模型与工具/             # Specific model architectures & tools
 │   ├── 01_CNN视觉.md
 │   ├── 02_RNN序列.md
 │   ├── 03_强化学习.md
 │   └── 04_工具框架.md
-├── KB4_语言与生成/          # 生成模型与LLM
+├── KB4_语言与生成/             # Generative models & LLMs
 │   ├── 01_生成模型.md
 │   └── 02_NLP与LLM.md
-├── KB5_小叶娱乐库/          # 娱乐推荐（示范性）
+├── KB5_小叶娱乐库/             # Entertainment (demonstration)
 │   └── KB5_小叶娱乐库.md
 ├── scripts/
-│   ├── kb_validate.py       # KB格式校验
-│   └── kb_stats.py          # KB统计分析
+│   ├── kb_validate.py          # KB format validator
+│   └── kb_stats.py             # KB statistics
 └── fine-tune/
-    ├── qa-extraction.md      # 从KB提取QA对方法
-    └── sft-dataset-format.md # SFT数据集格式
+    ├── qa-extraction.md         # QA pair extraction methodology
+    └── sft-dataset-format.md    # SFT dataset format spec
 ```
-
-## 🚀 使用方式
-
-### 方式1：直接阅读
-Clone仓库后，按KB0 → KB2 → KB3 → KB1的顺序阅读。KB0是地图，KB2/KB3是基础，KB1是应用。
-
-### 方式2：作为Ollama RAG知识库
-在Open WebUI中上传KB文件作为知识文档，模型可以直接检索。
-
-### 方式3：微调数据集构建
-从KB提取QA对 → 格式转换 → LLaMA-Factory微调 → 定制材料科学专用模型。
-详见 `fine-tune/qa-extraction.md`。
-
-## 📈 统计数据
-
-由 `scripts/kb_stats.py` 生成（运行 `python scripts/kb_stats.py` 查看最新统计）：
-- 总条目数、代码片段数、交叉引用数
-- 各KB条目分布
-- 术语覆盖统计
-
-## 🔍 生态位
-
-在GitHub上搜索「材料科学ML中文知识库」，几乎没有同类项目。现有的材料数据库（如Materials Project、AFLOW）是**数据仓库**而非**知识库**——它们提供原始数据，不提供「这篇论文为什么重要」「这个方法和那个方法有什么区别」「初学者应该先读哪三篇」。
-
-本仓库填补了这个空白：不是论文列表，是导航图。本知识库是熔炉协议(Crucible Protocol)中"材料科学×AI交叉"差异化优势的实体支撑。
-
-## 🤝 贡献指南
-
-欢迎材料科学同学补充！
-
-### 贡献方式
-1. Fork本仓库
-2. 在相应KB文件中添加条目（保持格式一致）
-3. 运行 `python scripts/kb_validate.py` 校验
-4. 提交PR
-
-### 条目格式
-```markdown
-### [论文标题](链接)
-- **作者**: Author et al. (Year)
-- **核心方法**: 方法名
-- **材料系统**: 什么材料
-- **关键结果**: 一句话核心发现
-- **代码**: [链接]()
-- **对初学者**: 可读性评估（⭐~⭐⭐⭐）
-```
-
-## 📄 License
-
-MIT License — 详见 [LICENSE](LICENSE)
 
 ---
 
-> "材料是宇宙写给人类的密信，机器学习是解码的钥匙。" — xuanhan
+## 🚀 Usage
+
+### Method 1: Read Directly
+Clone and read in order: KB0 → KB2 → KB3 → KB1. KB0 is the map, KB2/KB3 are foundations, KB1 is application.
+
+### Method 2: As Ollama RAG Knowledge Base
+Upload KB files as knowledge documents in Open WebUI. Models can retrieve directly.
+
+### Method 3: Fine-Tuning Dataset Construction
+Extract QA pairs from KB → format conversion → LLaMA-Factory fine-tuning → custom materials-science-specialized model.
+See `fine-tune/qa-extraction.md`.
+
+---
+
+## 📈 Statistics
+
+Generated by `scripts/kb_stats.py` (run `python scripts/kb_stats.py` for latest):
+- Total entries, code snippets, cross-references
+- Entry distribution by KB
+- Terminology coverage
+
+---
+
+## 🔍 Niche
+
+Search GitHub for "materials science ML Chinese knowledge base" and you'll find virtually nothing. Existing materials databases (Materials Project, AFLOW) are **data warehouses**, not **knowledge bases** — they provide raw data, not answers to "why this paper matters", "how this method differs from that one", or "which 3 papers should a beginner read first".
+
+This repo fills that gap: not a paper list, but a navigation map. This knowledge base is the concrete backing for the "Materials Science × AI intersection" differentiator in the 熔炉协议 (Crucible Protocol).
+
+---
+
+## 🤝 Contributing
+
+Materials science students welcome!
+
+### How to Contribute
+1. Fork this repo
+2. Add entries to the relevant KB file (keep formatting consistent)
+3. Run `python scripts/kb_validate.py` to validate
+4. Submit a PR
+
+### Entry Format
+```markdown
+### [Paper Title](link)
+- **Authors**: Author et al. (Year)
+- **Core Method**: Method name
+- **Material System**: What material
+- **Key Result**: One-line core finding
+- **Code**: [link]()
+- **For Beginners**: Readability rating (⭐ ~ ⭐⭐⭐)
+```
+
+---
+
+## 📄 License
+
+MIT License — see [LICENSE](LICENSE)
+
+---
+
+> "Materials are the universe's coded letters to humanity. Machine learning is the decoder key." — xuanhan
