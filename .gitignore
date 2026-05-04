@@ -1,0 +1,12 @@
+# Secrets & large files
+*.key
+*.token
+*.env
+*.gguf
+*.bin
+*.pth
+*.ckpt
+__pycache__/
+.DS_Store
+Thumbs.db
+node_modules/
