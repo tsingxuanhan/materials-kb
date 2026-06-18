@@ -1,3 +1,17 @@
+> ## ⚠️ 已归档 (Archived)
+> 
+> **本仓库已归档，不再维护。**
+> 
+> 请使用最新版知识库：**[xuanshu-knowledge-base](https://github.com/tsingxuanhan/xuanshu-knowledge-base)**
+> 
+> - 📊 524篇论文（本仓库237篇的2.2倍）
+> - 📁 30个分类（本仓库11个的2.7倍）
+> - 🧠 含AGI认知地图、认知架构调研、前沿补充
+> 
+> 本仓库保留作为历史参考。
+
+---
+
 # 📚 Materials Science ML Knowledge Base
 
 > 237 papers · 11 categories · ~9,000 lines of structured knowledge · Built for materials science students starting ML from zero
@@ -143,3 +157,4 @@ MIT License — see [LICENSE](LICENSE)
 ---
 
 > "Materials are the universe's coded letters to humanity. Machine learning is the decoder key." — xuanhan
+
